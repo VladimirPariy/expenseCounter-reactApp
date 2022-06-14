@@ -1,18 +1,18 @@
 import React from 'react';
 import './CostItem.css'
 import CostDate from "./CostDate";
+import Card from "./Card";
 
 const CostItem = (props) => {
 
   return (
-    <div className='cost-item'>
+    <Card className='cost-item'>
       <CostDate {...props}/>
       <div className='cost-item__description'>
         <h2>{props.description}</h2>
         <div className='cost-item__price'>${props.amount}</div>
       </div>
-
-    </div>
+    </Card>
   );
 };
 
