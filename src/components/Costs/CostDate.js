@@ -1,4 +1,3 @@
-import React from 'react';
 import './CostDate.css'
 
 const CostDate = ({date}) => {
