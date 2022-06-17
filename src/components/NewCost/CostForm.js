@@ -28,7 +28,9 @@ const CostForm = (props) => {
     setDescription('')
     setAmount('')
     setDate('')
+    props.setVisibility(false)
   }
+
 
   return (
     <form onSubmit={submitHandler}>
@@ -46,10 +48,10 @@ const CostForm = (props) => {
           <input type="date" min='2019-01-01' max='2022-12-31' onChange={dateChangeHandler} value={date}/>
         </div>
         <div className='new-cost__actions'>
-          <button type='submit'>Добавить расход</button>
+          <button type='submit' >Добавить расход</button>
+          <button type='button' onClick={()=>props.setVisibility(false)}>Отмена</button>
         </div>
       </div>
-
     </form>
   );
 };

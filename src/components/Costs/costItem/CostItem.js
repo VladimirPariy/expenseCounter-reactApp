@@ -1,7 +1,7 @@
 import './CostItem.css'
-import CostDate from "./CostDate";
-import Card from "../UI/Card";
-import "./CostList.css"
+import CostDate from "../costDate/CostDate";
+import Card from "../../UI/Card";
+import "../costList/CostList.css"
 const CostItem = (props) => {
 
   return (

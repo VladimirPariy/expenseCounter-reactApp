@@ -30,10 +30,11 @@ const [costs, setCosts] = useState(INITIAL_COSTS)
 const addCostHandler = (cost) => {
 setCosts((prevState)=>[cost, ...prevState])
 }
+  console.log(costs)
 
   return (
     <div>
-      <NewCost onAddCost={addCostHandler}/>
+      <NewCost onAddCost={addCostHandler} />
       <Costs costs={costs}/>
     </div>
   );
